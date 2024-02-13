@@ -1,0 +1,42 @@
+<div class="instructor-dashboard">
+  <div class="header">
+    <h2>INSTRUCTOR</h2>
+  </div>
+
+  <div class="availability-section">
+    <h3>Availability Preferences</h3>
+    <table class="availability-table">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th *ngFor="let day of days">{{ day }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let time of times">
+          <td>{{ time }}</td>
+          <td *ngFor="let day of days; let i = index" [ngClass]="getClassForSlot(day, time)" (click)="toggleSlot(day, time)"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+    <div class="footer-section">
+      <div class="footer-column">
+        <h3>NEWS</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Learn more ›</a>
+      </div>
+      <div class="footer-column">
+        <h3>FAQs</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Learn more ›</a>
+      </div>
+      <div class="footer-column">
+        <h3>FORMS</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Learn more ›</a>
+      </div>
+    </div>
+  </div>
+  

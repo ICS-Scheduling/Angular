@@ -1,0 +1,23 @@
+<div class="preferences-container">
+    <!-- Other parts of your form would go here -->
+  
+    <div class="schedule-selection">
+      <h3>COURSES</h3>
+      <table class="time-grid">
+        <tr>
+          <th></th>
+          <th *ngFor="let day of days">{{ day }}</th>
+        </tr>
+        <tr *ngFor="let hour of hours">
+          <td>{{ hour }}</td>
+          <td *ngFor="let day of days" 
+              [ngClass]="getPreferenceClass(preferences[day][hour])" 
+              (click)="togglePreference(day, hour)">
+          </td>
+        </tr>
+      </table>
+    </div>
+  
+    <button (click)="onSubmit()">SUBMIT PREFERENCES</button>
+  </div>
+  <p>instructor-preferences works!</p>

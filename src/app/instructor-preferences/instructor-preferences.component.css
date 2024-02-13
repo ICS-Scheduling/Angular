@@ -1,0 +1,32 @@
+.preferences-container {
+  }
+  
+  .time-grid {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .time-grid th, .time-grid td {
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .first-preference {
+    background-color: green;
+  }
+  
+  .second-preference {
+    background-color: yellow; 
+  }
+  
+  .third-preference {
+    background-color: orange;
+  }
+  
+  .not-available {
+    background-color: red;
+  }
+  

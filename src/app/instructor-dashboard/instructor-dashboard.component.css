@@ -1,0 +1,23 @@
+.instructor-dashboard {
+}
+
+.availability-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.availability-table th,
+.availability-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.available-slot {
+  background-color: #c8e6c9;
+}
+
+.unavailable-slot {
+  background-color: #ffccbc;
+}

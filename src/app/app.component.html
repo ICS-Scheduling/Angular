@@ -1,0 +1,37 @@
+<div class="container">
+    <h1>{{ title }}</h1>
+    <div class="login-options">
+      <div class="login-card" (click)="emisLogin()">
+        <div class="login-icon"></div>
+        <button class="login-button">EMIS Login</button>
+        <a href="#" (click)="seeMoreEmis()">See More ›</a>
+      </div>
+      <div class="login-card" (click)="instructorLogin()">
+        <div class="login-icon"></div>
+        <button class="login-button" (click)="instructorLogin()">Instructor Login</button>
+        <a href="#" (click)="seeMoreInstructor()">See More ›</a>
+      </div>
+      <div class="login-card" (click)="adminLogin()">
+        <div class="login-icon"></div>
+        <button class="login-button">Admin Login</button>
+        <a href="#" (click)="seeMoreAdmin()">See More ›</a>
+      </div>
+      <div class="login-card" (click)="departmentChairLogin()">
+        <div class="login-icon"></div>
+        <button class="login-button">Department Chair Login</button>
+        <a href="#" (click)="seeMoreDepartmentChair()">See More ›</a>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Forms</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="footer-info">
+        <p>UCI © year - year</p>
+        <a href="#">Privacy</a> – <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+  
