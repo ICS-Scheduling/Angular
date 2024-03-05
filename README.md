@@ -17,3 +17,10 @@ To run the program, use
 ```
 ng serve --open
 ```
+
+Essential code is under src/app/
+When creating a new module, use the following command:
+```
+ng generate MODULE_NAME
+ng g MODULE_NAME
+```
